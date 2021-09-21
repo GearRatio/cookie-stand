@@ -1,0 +1,42 @@
+html {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: small;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    border: black thick solid;
+    position: fixed;
+}
+
+header {
+    background-image: url("/img/salmon-400xauto.png");
+    background-repeat: no-repeat;
+    background-position-x: 20%;
+    background-position-y: center;
+    background-size: 25%;
+    box-sizing: border-box;
+    border-bottom: rgb(207, 133, 109);
+    padding: .5em;
+}
+
+h1 {
+    box-sizing: border-box;
+    -moz-box-direction: ;
+    width: 5em;
+    text-align: center;
+    /* border: black thin solid; */
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(207, 133, 109);
+    color: black;
+    text-align: center;
+}
