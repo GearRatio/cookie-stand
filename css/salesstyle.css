@@ -1,0 +1,57 @@
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: small;
+}
+
+#salesdata th {
+    box-sizing: border-box;
+    align-content: center;
+}
+
+#salesdata {
+    padding: 8px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#salesdata tr:nth-child(even) {
+    background-color: rgb(179, 178, 178);
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(207, 133, 109);
+    color: black;
+}
+
+#salesdata tr:hover {
+    background-color: rgb(245, 186, 179);
+}
+
+table,
+th,
+td,
+tr {
+    border: solid thin black;
+}
+
+th,
+td,
+tr {
+    text-align: center;
+}
+
+h4 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: medium;
+}
+
+header {
+    border: solid thin black;
+    background-color: rgb(113, 113, 6);
+}
