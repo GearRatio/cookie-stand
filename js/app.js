@@ -21,7 +21,6 @@ let openHours = [
     "7pm:",
 ];
 
-let totalCookiesSold = []; //push total sold to an array
 // define function to run when we create a store location
 function StoreData(name, minCust, maxCust, average) {
     this.name = name;
@@ -46,7 +45,6 @@ StoreData.prototype.cookiesPerHour = function() {
         this.sold.push(Math.ceil(this.custPerHour() * this.average)); //takes random number pushes to, rounds to next whole int
         this.totalCookies = this.totalCookies + this.sold[i];
     }
-    totalCookiesSold.push(this.sold);
 };
 
 //create a render prototype to insert into table
@@ -105,6 +103,9 @@ function renderAll() {
 }
 
 renderAll();
+
+// Object Literals from class 06
+
 // console.log(totalCookiesSold);
 // let seattleStore = {
 //     minCust: 23,

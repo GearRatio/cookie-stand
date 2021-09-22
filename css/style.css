@@ -4,39 +4,53 @@ html {
 }
 
 body {
-    margin: 0;
+    margin-top: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
     padding: 0;
-    height: 100vh;
-    border: black thick solid;
-    position: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     background-image: url("/img/salmon-400xauto.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position-x: 20%;
     background-position-y: center;
     background-size: 25%;
     box-sizing: border-box;
-    border-bottom: rgb(207, 133, 109);
-    padding: .5em;
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: .5rem solid rgb(98, 119, 57);
+    padding-bottom: .5em;
 }
 
 h1 {
     box-sizing: border-box;
-    -moz-box-direction: ;
+    background-color: rgb(98, 119, 57);
+    box-shadow: 4px 5px 10px rgb(133, 144, 110);
     width: 5em;
     text-align: center;
-    /* border: black thin solid; */
+    border: black thin solid;
+    border-radius: 25%;
+    margin: auto;
+    text-size-adjust: 6em;
 }
 
 footer {
     position: relative;
     left: 0;
     bottom: 0;
-    height: 10%;
     width: 100%;
     background-color: rgb(207, 133, 109);
     color: black;
     text-align: center;
+    margin-top: auto;
+}
+
+.locations {
+    text-decoration: underline;
+    display: inline-block;
 }
