@@ -61,7 +61,6 @@ StoreData.prototype.renderLi = function() {
         listElement.innerText = `${this.sold[i]}`; //need to output hours and cookies sold
         tableRow.appendChild(listElement); //append to tr
     } // adds total cookies sold to bottom of li
-    console.log(this.totalCookies);
     let listTotal = document.createElement("td");
     listTotal.innerText = `${this.totalCookies}`;
     tableRow.appendChild(listTotal);
@@ -107,6 +106,30 @@ function renderAll() {
     }
     tableFooter();
 }
+
+//declare variables for each form field , name, min, max, avg
+let storeFormEl = document.getElementById("storeManage");
+//DOM function for form submission
+function createStore(formsubmission) {
+    formsubmission.preventDefault();
+    let storeName = formsubmission.target.storeLocation.value;
+    let minCustomer = formsubmission.target.minCustomer.value;
+    let maxCustomer = formsubmission.target.maxCustomer.value;
+    let avgDaily = formsubmission.target.avgDailySales.value;
+    let numMinCust = parseInt(minCustomer);
+    let numMaxCust = parseInt(maxCustomer);
+    let newAvgDaily = parseFloat(avgDaily);
+
+    let newStoreLocation = new StoreData(
+        storeName,
+        numMinCust,
+        numMaxCust,
+        newAvgDaily
+    );
+    newStoreLocation.renderLi();
+}
+
+storeFormEl.addEventListener("submit", createStore);
 
 renderAll();
 
