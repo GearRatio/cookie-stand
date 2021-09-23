@@ -1,17 +1,8 @@
-html {
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: small;
-}
-
 body {
-    margin-top: 8px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 header {
@@ -20,29 +11,67 @@ header {
     background-position-x: 20%;
     background-position-y: center;
     background-size: 25%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row-reverse;
-    border-bottom: .5rem solid rgb(98, 119, 57);
-    padding-bottom: .5em;
+    border-bottom: 15px solid rgb(98, 119, 57);
+    height: 250px;
+    font-size: 60px;
+}
+
+.header {
+    display: inline-block;
+}
+
+
+/* ul {
+      list-style-type: none;
+      margin-top: 160px;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+  } */
+
+
+/* li {
+      display: inline-block;
+      font-size: 20px;
+      margin-top: 200px;
+  } */
+
+main {
+    height: 60vh;
 }
 
 h1 {
     box-sizing: border-box;
     background-color: rgb(98, 119, 57);
     box-shadow: 4px 5px 10px rgb(133, 144, 110);
-    width: 5em;
+    width: 250px;
+    height: 185px;
     text-align: center;
     border: black thin solid;
-    border-radius: 25%;
+    /* border-radius: 25%; */
     margin: auto;
-    text-size-adjust: 6em;
 }
 
-footer {
-    position: relative;
-    left: 0;
+article.about>p {
+    padding-top: 10px;
+    margin: 0px 60px 0 60px;
+    box-sizing: content-box;
+    justify-content: center;
+}
+
+figure {
+    margin-left: 20px;
+    margin-top: 20px;
+    border: solid thin black;
+}
+
+
+/* Footer section */
+
+.footer {
+    position: fixed;
     bottom: 0;
+    height: 80px;
     width: 100%;
     background-color: rgb(207, 133, 109);
     color: black;
@@ -53,4 +82,6 @@ footer {
 .locations {
     text-decoration: underline;
     display: inline-block;
+    margin: auto;
+    padding-top: 35px;
 }

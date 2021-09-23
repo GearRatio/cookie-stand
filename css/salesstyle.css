@@ -55,3 +55,7 @@ header {
     border: solid thin black;
     background-color: rgb(113, 113, 6);
 }
+
+nav {
+    border: solid thin black;
+}

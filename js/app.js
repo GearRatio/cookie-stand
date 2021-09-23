@@ -21,7 +21,7 @@ let openHours = [
     "7pm:",
 ];
 
-// define function to run when we create a store location
+// define constructor object to create a store location and provide sales totals / daily and hourly
 function StoreData(name, minCust, maxCust, average) {
     this.name = name;
     this.minCust = minCust;
@@ -39,7 +39,7 @@ StoreData.prototype.custPerHour = function() {
     );
 };
 
-//prototype
+//prototype to generate and push cookies per hour into the sold array
 StoreData.prototype.cookiesPerHour = function() {
     for (let i = 0; i < openHours.length; i++) {
         this.sold.push(Math.ceil(this.custPerHour() * this.average)); //takes random number pushes to, rounds to next whole int
@@ -47,7 +47,7 @@ StoreData.prototype.cookiesPerHour = function() {
     }
 };
 
-//create a render prototype to insert into table
+//create a render prototype to insert into table and display store location and hourly sales
 StoreData.prototype.renderLi = function() {
     this.cookiesPerHour(); // loops through hours array and fills cookiesSold based off of avg cust per hour.
     let tableRow = document.createElement("tr"); // table row
@@ -62,7 +62,7 @@ StoreData.prototype.renderLi = function() {
     tableBody.appendChild(tableRow);
 };
 
-//not sure about adding in a total
+//function generates sales totals in bottom row and adds up all stores hourly rates.
 function tableFooter() {
     //create table footer
     let tableRow = document.createElement("tr"); // table row
@@ -94,7 +94,7 @@ new StoreData("Dubai", 11, 38, 3.7);
 new StoreData("Paris", 20, 38, 2.3);
 new StoreData("Lima", 2, 16, 4.6);
 
-//loops over all data and outputs into table
+//loops over all data stored and and outputs into table footer.
 function renderAll() {
     for (let i = 0; i < StoreData.all.length; i++) {
         StoreData.all[i].renderLi();
