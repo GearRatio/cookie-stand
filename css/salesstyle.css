@@ -59,3 +59,19 @@ header {
 nav {
     border: solid thin black;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    margin-top: 10px;
+}
+
+fieldset {
+    flex-direction: column;
+    position: relative;
+    padding: 15px;
+}

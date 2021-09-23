@@ -19,40 +19,60 @@
     <header>
         <h4>Pat's Global Sales Totals</h4>
     </header>
-    <table id="salesdata">
-        <thead>
-            <tr>
-                <th scope="col">Hours of Operation:</th>
-                <th scope="col">6:00am</th>
-                <th scope="col">7:00am</th>
-                <th scope="col">8:00am</th>
-                <th scope="col">9:00am</th>
-                <th scope="col">10:00am</th>
-                <th scope="col">11:00am</th>
-                <th scope="col">12:00pm</th>
-                <th scope="col">1:00pm</th>
-                <th scope="col">2:00pm</th>
-                <th scope="col">3:00pm</th>
-                <th scope="col">4:00pm</th>
-                <th scope="col">5:00pm</th>
-                <th scope="col">6:00pm</th>
-                <th scope="col">7:00pm</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody id="tableBody">
+    <main>
+        <form id="storeManage">
+            <fieldset>
+                <legend>Add New Location</legend>
+                <label>Store Location</label>
+                <input name="storeLocation" type="text" required="required">
+                <legend>Min Customers</legend>
+                <label>Minimum Daily Customers</label>
+                <input name="minCustomer" type="number" required="required">
+                <legend>Max Customers</legend>
+                <label>Max Daily Customers</label>
+                <input name="maxCustomer" type="number" required="required">
+                <legend>Average Daily Sales</legend>
+                <label>Avg Daily Sales</label>
+                <input name="avgDailySales" type="number" required="required">
+                <button>Add New Store</button>
+            </fieldset>
+        </form>
 
-        </tbody>
-    </table>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Return To Store</a>
-            </li>
-        </ul>
-    </nav>
+        <table id="salesdata">
+            <thead>
+                <tr>
+                    <th scope="col">Hours of Operation:</th>
+                    <th scope="col">6:00am</th>
+                    <th scope="col">7:00am</th>
+                    <th scope="col">8:00am</th>
+                    <th scope="col">9:00am</th>
+                    <th scope="col">10:00am</th>
+                    <th scope="col">11:00am</th>
+                    <th scope="col">12:00pm</th>
+                    <th scope="col">1:00pm</th>
+                    <th scope="col">2:00pm</th>
+                    <th scope="col">3:00pm</th>
+                    <th scope="col">4:00pm</th>
+                    <th scope="col">5:00pm</th>
+                    <th scope="col">6:00pm</th>
+                    <th scope="col">7:00pm</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
 
+            </tbody>
+        </table>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Return To Store</a>
+                </li>
+            </ul>
+        </nav>
+    </main>
 
 
     <script src="./js/app.js"></script>

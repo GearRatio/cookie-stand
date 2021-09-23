@@ -29,7 +29,8 @@ function StoreData(name, minCust, maxCust, average) {
     this.average = average;
     this.sold = [];
     this.totalCookies = 0;
-    StoreData.all.push(this); // pushes every constructor into an array
+    StoreData.all.push(this);
+    // console.log(StoreData.all); // pushes every constructor into an array
 }
 
 //create an average cookies sold per hour prototype
@@ -44,6 +45,7 @@ StoreData.prototype.cookiesPerHour = function() {
     for (let i = 0; i < openHours.length; i++) {
         this.sold.push(Math.ceil(this.custPerHour() * this.average)); //takes random number pushes to, rounds to next whole int
         this.totalCookies = this.totalCookies + this.sold[i];
+        // console.log(this.totalCookies);
     }
 };
 
@@ -59,6 +61,10 @@ StoreData.prototype.renderLi = function() {
         listElement.innerText = `${this.sold[i]}`; //need to output hours and cookies sold
         tableRow.appendChild(listElement); //append to tr
     } // adds total cookies sold to bottom of li
+    console.log(this.totalCookies);
+    let listTotal = document.createElement("td");
+    listTotal.innerText = `${this.totalCookies}`;
+    tableRow.appendChild(listTotal);
     tableBody.appendChild(tableRow);
 };
 
@@ -67,7 +73,7 @@ function tableFooter() {
     //create table footer
     let tableRow = document.createElement("tr"); // table row
     let tableHead = document.createElement("th"); //
-    tableHead.textContent = `Hourly Totals All Locations`;
+    tableHead.textContent = `Totals All`;
     tableRow.appendChild(tableHead);
     let counter = 0;
     for (let i = 0; i < openHours.length; i++) {
