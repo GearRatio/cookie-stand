@@ -3,6 +3,7 @@
 //selects main
 //let selectEl = document.querySelector("main");
 let tableBody = document.getElementById("tableBody");
+let tableFoot = document.getElementById("tableFoot");
 //Seattle store hours
 let openHours = [
     "6am:",
@@ -69,9 +70,8 @@ StoreData.prototype.renderLi = function() {
 
 //function generates sales totals in bottom row and adds up all stores hourly rates.
 function tableFooter() {
-    //create table footer
-    let tableRow = document.createElement("tr"); // table row
-    let tableHead = document.createElement("th"); //
+    let tableRow = document.createElement("tr");
+    let tableHead = document.createElement("th");
     tableHead.textContent = `Totals All`;
     tableRow.appendChild(tableHead);
     let counter = 0;
@@ -88,7 +88,7 @@ function tableFooter() {
     tableHead = document.createElement("th");
     tableHead.textContent = counter;
     tableRow.appendChild(tableHead);
-    tableBody.appendChild(tableRow);
+    tableFoot.appendChild(tableRow);
 }
 //hold all constructors in array/ multidimensional
 StoreData.all = [];
@@ -126,7 +126,9 @@ function createStore(formsubmission) {
         numMaxCust,
         newAvgDaily
     );
+    tableFoot.innerHTML = "";
     newStoreLocation.renderLi();
+    tableFooter();
 }
 
 storeFormEl.addEventListener("submit", createStore);

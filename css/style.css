@@ -11,77 +11,95 @@ header {
     background-position-x: 20%;
     background-position-y: center;
     background-size: 25%;
-    border-bottom: 15px solid rgb(98, 119, 57);
+    border-bottom: 10px solid rgb(98, 119, 57);
     height: 250px;
-    font-size: 60px;
 }
 
-.header {
-    display: inline-block;
-}
-
-
-/* ul {
-      list-style-type: none;
-      margin-top: 160px;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-  } */
-
-
-/* li {
-      display: inline-block;
-      font-size: 20px;
-      margin-top: 200px;
-  } */
-
-main {
-    height: 60vh;
+#header {
+    display: flex;
+    position: relative;
 }
 
 h1 {
-    box-sizing: border-box;
     background-color: rgb(98, 119, 57);
     box-shadow: 4px 5px 10px rgb(133, 144, 110);
     width: 250px;
     height: 185px;
     text-align: center;
+    align-items: center;
+    justify-self: center;
+    display: flex;
+    margin: 0 auto;
     border: black thin solid;
-    /* border-radius: 25%; */
+    border-radius: 55%;
+    font-size: x-large;
+}
+
+ul,
+li,
+a {
+    margin-top: 30px;
+    margin-right: 35px;
+    list-style: none;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    background-color: lightblue;
+    border: thin black solid;
+}
+
+.about,
+p {
+    display: inline-block;
+    width: 500px;
+    height: 199px;
     margin: auto;
+    border: thin black solid;
+    background-color: floralwhite;
+    position: relative;
 }
 
-article.about>p {
-    padding-top: 10px;
-    margin: 0px 60px 0 60px;
-    box-sizing: content-box;
-    justify-content: center;
-}
-
-figure {
-    margin-left: 20px;
-    margin-top: 20px;
-    border: solid thin black;
+.family {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 40px;
 }
 
 
 /* Footer section */
 
-.footer {
+#footer {
     position: fixed;
-    bottom: 0;
-    height: 80px;
+    height: 130px;
     width: 100%;
     background-color: rgb(207, 133, 109);
     color: black;
-    text-align: center;
-    margin-top: auto;
+    text-decoration-style: none;
+    bottom: 0px;
+    border-top: thin solid rgb(207, 133, 109);
 }
 
 .locations {
-    text-decoration: underline;
+    display: flex;
+    text-decoration: none;
+    margin: 0 auto;
     display: inline-block;
-    margin: auto;
-    padding-top: 35px;
+}
+
+h3 {
+    padding-top: 10px;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+}
+
+ul,
+li {
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    word-spacing: 3px;
 }
