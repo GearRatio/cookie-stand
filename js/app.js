@@ -4,6 +4,7 @@
 //let selectEl = document.querySelector("main");
 let tableBody = document.getElementById("tableBody");
 let tableFoot = document.getElementById("tableFoot");
+let storeFormEl = document.getElementById("storeManage");
 //Seattle store hours
 let openHours = [
     "6am:",
@@ -107,11 +108,11 @@ function renderAll() {
     tableFooter();
 }
 
-//declare variables for each form field , name, min, max, avg
-let storeFormEl = document.getElementById("storeManage");
 //DOM function for form submission
 function createStore(formsubmission) {
     formsubmission.preventDefault();
+    // let {storeLocation, minCustomer, maxCustomer, avgDailySales } = formsubmission.event
+
     let storeName = formsubmission.target.storeLocation.value;
     let minCustomer = formsubmission.target.minCustomer.value;
     let maxCustomer = formsubmission.target.maxCustomer.value;
