@@ -173,7 +173,7 @@ figcaption {
 /* Footer */
 
 .footer {
-    background-image: url(/img/chinook.jpg);
+    background-image: url("img/chinook.jpg");
     background-repeat: repeat-x;
     background-position-x: 12%;
     background-position-y: center;
