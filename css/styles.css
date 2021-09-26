@@ -28,7 +28,8 @@
 }
 
 .container {
-    font-family: Georgia, 'Times New Roman', Times, serif margin-left: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: auto;
     margin-right: auto;
     max-width: 104rem;
 }
@@ -45,7 +46,7 @@ body {
 /* header and logo top of page */
 
 .header {
-    background-image: url("img/salmon-400xauto.png");
+    background-image: url("/img/salmon-400xauto.png");
     background-repeat: repeat-x;
     background-position-x: 20%;
     background-position-y: center;
@@ -173,7 +174,7 @@ figcaption {
 /* Footer */
 
 .footer {
-    background-image: url("img/chinook.jpg");
+    background-image: url("/img/chinook.jpg");
     background-repeat: repeat-x;
     background-position-x: 12%;
     background-position-y: center;
