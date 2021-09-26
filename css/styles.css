@@ -1,0 +1,184 @@
+/* container wrapper */
+
+.container>* {
+    margin-bottom: 10px;
+}
+
+
+/* Grid and viewport adjustment. */
+
+@media screen and (min-width: 40em) {
+    .container>* {
+        margin-bottom: 0;
+    }
+    /* Define the grid */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-gap: 10px 20px;
+    }
+    /* Place items on the grid */
+    .header,
+    .footer {
+        grid-column: 1 / -1;
+    }
+    .content {
+        grid-column: 2 / 3;
+    }
+}
+
+.container {
+    font-family: Georgia, 'Times New Roman', Times, serif margin-left: auto;
+    margin-right: auto;
+    max-width: 104rem;
+}
+
+.container>* {
+    padding: 1em;
+}
+
+body {
+    background-color: lightcyan;
+}
+
+
+/* header and logo top of page */
+
+.header {
+    background-image: url("/img/salmon-400xauto.png");
+    background-repeat: repeat-x;
+    background-position-x: 20%;
+    background-position-y: center;
+    background-size: 25%;
+    border-bottom: 10px solid rgb(98, 119, 57);
+    height: 200px;
+}
+
+li a.active {
+    background-color: #050505;
+    color: rgb(207, 133, 109);
+    text-decoration: none;
+    cursor: pointer;
+    height: 5px;
+    width: 10px;
+    font-size: 22px;
+}
+
+#header-logo {
+    background-color: rgb(98, 119, 57);
+    box-shadow: 4px 5px 10px rgb(133, 144, 110);
+    width: 250px;
+    height: 185px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: rgb(1, 49, 126);
+    display: flex;
+    margin: auto;
+    border: black 3px solid;
+    border-radius: 10%;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* Start of left side bar and Global Locations */
+
+#locations {
+    background-color: rgb(207, 133, 109);
+}
+
+#locations {
+    font-size: 115%
+}
+
+#locations>p {
+    text-align: center;
+    font-size: 120%;
+}
+
+.locations-all {
+    font-weight: bold;
+    text-align: center;
+    line-height: 120%;
+}
+
+.list-locations {
+    list-style: none;
+    text-align: center;
+}
+
+.about {
+    line-height: 120%;
+}
+
+
+/* Start of main content in center of page */
+
+#content-main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(207, 133, 109);
+}
+
+#family-photo {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 115%;
+    font-weight: bolder;
+}
+
+.main-info {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    line-height: 120%;
+    font-size: 115%;
+}
+
+.main-info p::first-letter {
+    font-size: 130%
+}
+
+.cookie-cutter {
+    font-size: 115%;
+    line-height: 120%;
+    text-align: center;
+}
+
+
+/* Start of Right Sidebar */
+
+.aside-two {
+    background-color: rgb(207, 133, 109);
+    font-size: 115%;
+}
+
+.about {
+    margin: 6px;
+    padding: 10px;
+    line-height: 120%;
+}
+
+.tshirt {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* Footer */
+
+.footer {
+    background-image: url(/img/chinook.jpg);
+    background-repeat: repeat-x;
+    background-position-x: 12%;
+    background-position-y: center;
+    background-size: 8%;
+    border-top: 10px solid rgb(98, 119, 57);
+    border-bottom: 10px solid rgb(98, 119, 57);
+    height: 3rem;
+}

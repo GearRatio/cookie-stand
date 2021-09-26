@@ -1,3 +1,7 @@
+body {
+    background-color: lightcyan;
+}
+
 #salesdata th {
     box-sizing: border-box;
     align-content: center;
@@ -30,7 +34,7 @@ th,
 td,
 tr {
     border: solid medium black;
-    font-family: 'Bebas Neue', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
 
@@ -46,7 +50,7 @@ tr {
 
 header {
     border: solid 5px black;
-    background-color: rgb(113, 113, 6);
+    background-color: rgb(98, 119, 57);
     height: 120px;
     margin: auto;
 }
@@ -69,9 +73,9 @@ form {
     height: 200px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: rgb(113, 113, 6);
+    background-color: rgb(98, 119, 57);
     border: rgb(207, 133, 109) 6px solid;
-    font-family: 'Bebas Neue', cursive;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 input[type=text] {

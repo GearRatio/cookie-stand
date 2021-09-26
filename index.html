@@ -6,59 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
 
     <title>Pat's Salmon Cookies</title>
 </head>
-
-<body>
-    <!-- Beginning of Header Content -->
-    <header>
-        <div id="header">
-            <h1>Pat's Salmon Cookies</h1>
-            <nav>
-                <ul>
-                    <li><a href="sales.html">Sales</a></li>
-                    <li><a href="#news">Cookie Stuff</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+<div class="container">
+    <header class="header">
+        <h1 id="header-logo">Pat's Salmon Cookies</h1>
+        <ul class="sales-page">
+            <li>
+                <a class="active" href="sales.html">Sales Page</a>
+            </li>
+        </ul>
     </header>
-    <!-- Main Content Section -->
-    <main>
-        <div class="family">
-            <img src="img/family-350x200.jpg">
-            <figcaption>Pat, Tina, Tim, and Tammy</figcaption>
-        </div>
-        <article class="about">
-            <p>Thank you visiting Pat's Salmon Cookies this site has been a long time coming and has a long way to go. However, what's really amazing is that we have salmon cookies all over the world. Crazy! Salmon, in cookies. Tell all your friends about
-                us. We sure could use the support because we are selling salmon cookies. For people, not dogs. Just in case you were wondering the are made from all wild caught salmon. It keeps the cookie moist and seems to really attract a lot of cats.</p>
-        </article>
 
-        <div>
-            <img src="img/frosted-cookie.jpg"></div>
-
-
-
-    </main>
-    <!-- footer to have business, location, and about information -->
-    <footer class="footer">
-        <div id="footer">
-            <h3>Locations:</h3>
-            <ul>
-                <li class="locations">Seattle</li>
-                <li class="locations">Tokyo</li>
-                <li class="locations">Dubai</li>
-                <li class="locations">Paris</li>
-                <li class="locations">Lima</li>
+    <!-- Aside1 -->
+    <div id="locations">
+        <aside>
+            <h3 class="locations-all">Gobal Locations</h3>
+            <ul class="list-locations">
+                <li>Seattle</li>
+                <li>Tokyo</li>
+                <li>Dubai</li>
+                <li>Paris</li>
+                <li>Lima</li>
             </ul>
+            <h3 class="locations-all">Store Hours All Locations</h3>
+            <p>Monday through Thursday</p>
+            <p>6am to 7pm</p>
+            <h3 class="locations-all">Contact:</h3>
+            <p>patsalmoncookies@hotmail.com</p>
+            <p>Phone: 800-GET-FISH</p>
+            <img src="/img/fish.jpg" alt="">
+        </aside>
+    </div>
+
+    <main id="content-main">
+        <div id="family-photo">
+            <img src="img/family-350x200.jpg" alt="Family around cookie jar">
+            <figcaption><b>Pat, Tina, Tim, and Tammy</b></figcaption>
         </div>
+        <div class="main-info">
+            <p>
+                From our family to yours, we hope you find our unique recipe, tasty treat that imparts a healthy dose of salmon in your diet. Our kids love sharing our salmon cookies with friends. This unique tasty treat is loved all over the world. It also makes a great
+                treat for your cat or dog. It truly is a unique cookie. Please visit our store location nearest you for information on franchise opportunities and to sample our product.
+            </p>
+        </div>
+        <div class="cookie-cutter">
+            <img src="img/cutter-276x175.jpeg" alt="salmon shaped cookie cutter">
+            <img src="img/frosted-cookie.jpg" alt="frosted salmon cookie">
+            <p>Come visit our store locations and take home your own cookie dough to bake in the comfort of your own home. With each purchase you get a free cookie cutter and free frosted salmon cookie!</p>
+        </div>
+    </main>
+    <!-- Aside 2 -->
+    <div class="aside-two">
+        <aside>
+            <p class="about">Pat's Salmon Cookies &copy; are a global brand started in Seattle Washington. The flagship store is located at Pike Place Market across the street from Palihotel in Seattle Washington. </p>
+
+            <p>Please visit one of our locations soon!</p>
+            <div>
+                <img class="tshirt" src="img/shirt.jpg" alt="salmon on t-shirt">
+                <figcaption>All store locations have shirts created by my wife, Tina. Buy one today!
+                    <figcaption>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer class="footer">
+
     </footer>
-
-</body>
-
-</html>
+</div>
